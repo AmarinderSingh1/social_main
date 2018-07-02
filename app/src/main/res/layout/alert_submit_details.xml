@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/paddingL"
+        >
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/alert_ok_icon"
+            android:layout_margin="@dimen/paddingL"
+
+            />
+        <TextView
+            android:id="@+id/alertHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/btnText"
+            android:text="abc"
+            fontPath="fonts/bold.ttf"
+            tools:ignore="MissingPrefix"
+            android:layout_marginTop="@dimen/padding"
+            android:padding="@dimen/padding"
+            android:gravity="center"
+            android:textSize="@dimen/textS"
+            />
+        <TextView
+            android:id="@+id/alertMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abc"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:gravity="center"
+            android:textColor="@color/gray_light"
+            android:padding="@dimen/padding"
+            />
+        <Button
+            android:id="@+id/alertOkBtn"
+            android:layout_margin="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textS"
+            android:text="Ok"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_black"
+            />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

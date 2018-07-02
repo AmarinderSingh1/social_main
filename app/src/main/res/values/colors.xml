@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="white_opacity">#CCffffff</color>
+    <color name="black">#000</color>
+    <color name="grey_icon_home">#666666</color>
+    <color name="gray">#424242</color>
+    <color name="button_login">#337ab7</color>
+    <color name="gray_light">#999999</color>
+    <color name="status_bar">#004e87</color>
+    <color name="bottom_bar">#6ca9ea</color>
+    <color name="theme_color">#e93b3c</color>
+    <color name="light_black">#8a8a8a</color>
+    <color name="fb_color">#4e5aa7</color>
+    <color name="lighter_black">#8c8c8c</color>
+    <color name="new_light_grey">#8a8a8f</color>
+    <color name="seperator_color">#c8c7cc</color>
+    <color name="bottom_bg">#eeeeee</color>
+    <color name="green">#4FC761</color>
+    <color name="onBoardGreen">#66cc66</color>
+    <color name="onBoardYellow">#ffcc33</color>
+    <color name="onBoardGrey">#f4f4f4</color>
+    <color name="btnBack">#d6d6d6</color>
+    <color name="btnText">#333333</color>
+    <color name="os_1">#4db6e3</color>
+    <color name="os_2">#f28e42</color>
+    <color name="os_3">#e93b3c</color>
+    <color name="os_4">#30e7b9</color>
+    <color name="blue">#009688</color>
+    <color name="snack_background">#b53030</color>
+
+    <color name="orange">#ff5722</color>
+    <color name="ablue">#009688</color>
+    <color name="brown">#795548</color>
+    <color name="purple">#673ab7</color>
+    <color name="light_blue">#5ac8fa</color>
+    <color name="dark_green">#1a872d</color>
+    <color name="yellow">#ffcc00</color>
+    <color name="green1">#4cd964</color>
+    <color name="tabIndicor">#FFC4C3</color>
+</resources>

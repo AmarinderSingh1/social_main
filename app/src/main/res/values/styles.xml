@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary" tools:ignore="NewApi">#EA3840</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">#EA3840</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">#EA3840</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/theme_color</item>
+        <item name="colorAccent">@color/theme_color</item>
+    </style>
+
+    <style name="TextInputLayoutForFragment" >
+        <item name="android:textColor">@color/theme_color</item>
+        <item name="colorAccent">@color/theme_color</item>
+        <item name="colorControlNormal">@color/theme_color</item>
+        <item name="colorControlActivated">@color/theme_color</item>
+    </style>
+
+    <style name="TextInputLayout" parent="TextAppearance.AppCompat" >
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColor">@color/theme_color</item>
+<!--
+        <item name="android:textSize">20sp</item>
+-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/theme_color</item>
+        <item name="colorControlNormal">@color/theme_color</item>
+        <item name="colorControlActivated">@color/theme_color</item>
+    </style>
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/light_black</item>
+        <item name="colorControlActivated">@color/theme_color</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="tabTheme" parent="android:style/Theme">
+        <item name="android:tabWidgetStyle">@style/Widget.TabWidget</item>
+    </style>
+
+    <style name="MapCardTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#77000000</item>
+    </style>
+
+    <style name="MapCardDescription" parent="@android:style/TextAppearance">
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#77000000</item>
+    </style>
+
+    <style name="Widget.TabWidget" parent="android:Theme">
+        <item name="android:tabStripEnabled">false</item>
+    </style>
+
+    <style name="SpinnerAsEditText" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@android:drawable/editbox_background</item>
+        <!--<item name="android:prompt">@string/select_brand</item>-->
+    </style>
+
+    <style name="SpinnerAsEditText2" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@android:drawable/editbox_background</item>
+        <!--<item name="android:prompt">@string/select_brand</item>-->
+    </style>
+
+    <style name="AppTheme2" parent="@android:style/Theme.Holo.NoActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" pafrent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="BottomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">0dp</item>
+        <item name="tabPaddingEnd">0dp</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+
+    </style>
+
+    <style name="HeaderBar">
+        <item name="android:background">#e93b3c</item>
+    </style>
+</resources>

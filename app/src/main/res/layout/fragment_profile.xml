@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  >
+               <include layout="@layout/fragment_my_profile"
+                   android:visibility="gone"
+                   ></include>
+
+               <include layout="@layout/fragment_com_info"
+                   android:visibility="gone"
+                   ></include>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/baseLayout"
+                >
+                  <LinearLayout
+                      android:id="@+id/linear1"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:background="@color/btnBack"
+                      >
+                      <TextView
+                          android:id="@+id/textAccount"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/btnText"
+                          android:textSize="@dimen/textL"
+                          fontPath="fonts/bold.ttf"
+                          tools:ignore="MissingPrefix"
+                          android:paddingLeft="@dimen/paddingL"
+                          android:paddingRight="@dimen/padding"
+                          android:paddingTop="@dimen/padding"
+                          android:text="Manage Account"
+                          />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingL"
+                    >
+                      <TextView
+                         android:layout_width="wrap_content"
+                          android:paddingLeft="@dimen/paddingL"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/light_black"
+                          android:textSize="@dimen/textNS"
+                          fontPath="fonts/bold.ttf"
+                          tools:ignore="MissingPrefix"
+                          android:text="STATUS: "
+                          android:id="@+id/textStatus"
+                          />
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/btnText"
+                    android:textSize="@dimen/textNS"
+                    fontPath="fonts/bold.ttf"
+                    android:id="@+id/textonboarding"
+                    tools:ignore="MissingPrefix"
+                    android:text="ONBOARDING"
+                    />
+                    </LinearLayout>
+
+                  </LinearLayout>
+
+                  <android.support.v7.widget.RecyclerView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/rcView"
+                      >
+                  </android.support.v7.widget.RecyclerView>
+
+              </LinearLayout>
+           </LinearLayout>
+
+       </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

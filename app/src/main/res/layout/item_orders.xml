@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/paddingL"
+    android:layout_marginTop="@dimen/paddingL"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white"
+        android:id="@+id/back"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/background"
+        android:background="@drawable/rounded_white"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding"
+        android:elevation="5sp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:id="@+id/iv"
+            android:src="@drawable/ic_edit"
+            />
+
+        <TextView
+            android:id="@+id/textOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textXXL"
+            />
+        <TextView
+            fontPath="fonts/regular.ttf"
+            android:textColor="@color/white"
+            tools:ignore="MissingPrefix"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:id="@+id/textTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

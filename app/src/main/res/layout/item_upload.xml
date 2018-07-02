@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingS"
+        android:gravity="center"
+        >
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/doc_icon"
+            android:id="@+id/upl"
+            />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/close_icon"
+            android:id="@+id/cancel"
+            android:layout_alignEnd="@id/upl"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upl"
+            android:id="@+id/fileName"
+            android:paddingTop="3dp"
+            android:text="hello"
+            android:maxLength="10"
+            android:lines="1"
+            android:textSize="@dimen/textNS"
+            android:textColor="@color/gray_light"
+            android:gravity="left"
+            />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

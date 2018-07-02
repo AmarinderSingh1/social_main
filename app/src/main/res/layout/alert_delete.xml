@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/paddingL"
+        >
+
+
+        <TextView
+            android:id="@+id/alertHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/btnText"
+            android:text="abc"
+            fontPath="fonts/bold.ttf"
+            tools:ignore="MissingPrefix"
+
+            android:layout_marginTop="@dimen/padding"
+            android:padding="@dimen/padding"
+            android:gravity="center"
+            android:textSize="@dimen/textS"
+            />
+        <TextView
+            android:id="@+id/alertMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abc"
+            android:gravity="center"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:textColor="@color/gray_light"
+            android:padding="@dimen/padding"
+            />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:weightSum="2"
+         >
+        <Button
+            android:id="@+id/alertOkBtn"
+            android:layout_margin="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textS"
+            android:text="Ok"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_grey"
+            />
+        <Button
+            android:id="@+id/alertCancelBtn"
+            android:layout_margin="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textS"
+            android:text="Cancel"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_grey"
+            />
+
+     </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

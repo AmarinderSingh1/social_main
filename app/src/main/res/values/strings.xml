@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name2">Wahhao</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+    <string name="action_settings">Settings</string>
+    <string name="custom_app_name">Wahhao</string>
+    <string name="cancel">CANCEL</string>
+    <string name="digits">1234567890 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ </string>
+    <string name="digits1">_-.1234567890 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ </string>
+</resources>

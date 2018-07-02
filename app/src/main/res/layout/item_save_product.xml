@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/padding"
+    android:weightSum="1"
+    android:padding="6dp"
+    android:gravity="center_vertical"
+    >
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:id="@+id/checkSelected"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/btnText"
+        />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight=".60"
+        android:paddingLeft="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/statusLay"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/paddingS"
+            android:paddingLeft="@dimen/paddingS"
+            android:background="@drawable/rounded_grey"
+            android:layout_marginBottom="@dimen/paddingS"
+            >
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:textSize="@dimen/textNS"
+            android:textColor="@color/white"
+            android:text="Product Status"
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/bold.ttf"
+            tools:ignore="MissingPrefix"
+            android:textSize="@dimen/textL"
+            android:textColor="@color/btnText"
+            android:text="Product Name"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            >
+
+            <TextView
+                android:id="@+id/txtWhin"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fontPath="fonts/bold.ttf"
+                android:textSize="@dimen/textNS"
+                tools:ignore="MissingPrefix"
+                android:textAllCaps="true"
+                android:textColor="@color/btnText"
+                android:text="Whin"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtCatLabel"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/regular.ttf"
+            android:textSize="@dimen/textNS"
+            android:layout_marginTop="8dp"
+            android:textAllCaps="true"
+            tools:ignore="MissingPrefix"
+            android:textColor="@color/gray_light"
+            android:text="Category Label"
+            />
+        <TextView
+            android:id="@+id/txtCatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/bold.ttf"
+            android:textAllCaps="true"
+            tools:ignore="MissingPrefix"
+            android:textSize="@dimen/textNS"
+            android:maxLines="1"
+            android:textColor="@color/btnText"
+            android:text="Category"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight=".40"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/txtPreview"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:paddingRight="@dimen/paddingL"
+            fontPath="fonts/bold.ttf"
+            tools:ignore="MissingPrefix"
+            android:textSize="@dimen/textNS"
+            android:textColor="@color/theme_color"
+            android:text="Preview Product"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgInfo"
+            android:src="@drawable/ic_info"
+            android:layout_gravity="right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtPreview"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_marginBottom="@dimen/padding"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txtSkuLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/regular.ttf"
+            android:textSize="@dimen/textNS"
+            tools:ignore="MissingPrefix"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="43dp"
+            android:textColor="@color/gray_light"
+            android:text="SKU"
+            />
+        <TextView
+            android:id="@+id/txtSkuText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/bold.ttf"
+            android:textSize="@dimen/textNS"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/btnText"
+            android:text="Sub-Cat"
+            tools:ignore="MissingPrefix"
+            android:layout_below="@id/txtSkuLabel"
+            />
+
+
+
+        <TextView
+            android:id="@+id/txtsubCatLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/regular.ttf"
+            android:textSize="@dimen/textNS"
+            android:layout_gravity="bottom"
+            tools:ignore="MissingPrefix"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/gray_light"
+            android:layout_above="@+id/txtSubCatText"
+            android:text="Sub-Cat-Label"
+            />
+        <TextView
+            android:id="@+id/txtSubCatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/bold.ttf"
+            android:textSize="@dimen/textNS"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/btnText"
+            android:text="Sub-Cat"
+            tools:ignore="MissingPrefix"
+            android:layout_alignParentBottom="true"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight=".20"
+        android:id="@+id/delLayout"
+         >
+
+        <ImageView
+            android:layout_width="27dp"
+            android:padding="3dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_edit"
+            android:layout_height="27dp"
+            android:layout_margin="@dimen/paddingS"
+            android:id="@+id/edit"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/delete"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/padding"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_height="wrap_content" />
+        />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/btnBack"
+        android:layout_margin="@dimen/padding"
+        android:padding="@dimen/paddingL"
+        android:id="@+id/disLayout"
+        >
+        <TextView
+            android:id="@+id/disHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/regular.ttf"
+            android:textSize="@dimen/textNS"
+            tools:ignore="MissingPrefix"
+            android:maxLines="1"
+            android:textAllCaps="false"
+            android:textColor="@color/gray_light"
+            android:text="Sub-Cat-Label"
+            />
+        <TextView
+            android:id="@+id/disPoint1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/regular.ttf"
+            android:textSize="@dimen/textNS"
+            android:layout_gravity="bottom"
+            tools:ignore="MissingPrefix"
+            android:maxLines="1"
+            android:textAllCaps="false"
+            android:textColor="@color/gray_light"
+            android:text="1.Sub-Cat-Label"
+            />
+        <TextView
+            android:id="@+id/disPoint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/regular.ttf"
+            android:textSize="@dimen/textNS"
+            android:maxLines="1"
+            android:textAllCaps="false"
+            android:textColor="@color/gray_light"
+            android:text="2.Sub-Cat"
+            tools:ignore="MissingPrefix"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/padding"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginTop="@dimen/paddingL"
+        android:background="@color/btnBack"
+        />
+</LinearLayout>

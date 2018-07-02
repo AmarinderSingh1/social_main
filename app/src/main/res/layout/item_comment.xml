@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_margin="@dimen/padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:background="@color/btnBack"
+            >
+        <TextView
+            android:id="@+id/nameLabel"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/bold.ttf"
+            tools:ignore="MissingPrefix"
+            android:textColor="@color/btnText"
+            android:textSize="@dimen/textS"
+            android:text="Comments"
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/desValue"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:textColor="@color/btnText"
+            android:textSize="@dimen/textS"
+            android:text="Comment Description"
+            />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcCommentImg"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginLeft="@dimen/padding"
+        >
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

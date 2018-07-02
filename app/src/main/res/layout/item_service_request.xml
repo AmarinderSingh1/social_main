@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/itemLay"
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/paddingL"
+                android:paddingBottom="@dimen/paddingS"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Approved!! "
+                    android:textColor="@color/gray_light"
+                    fontPath="fonts/regular.ttf"
+                    android:id="@+id/textReqLabel"
+                    android:paddingRight="@dimen/paddingS"
+                    android:textSize="@dimen/textN"
+                    tools:ignore="MissingPrefix"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Approved!! "
+                    android:textColor="@color/btnText"
+                    fontPath="fonts/regular.ttf"
+                    android:textSize="@dimen/textN"
+                    tools:ignore="MissingPrefix"
+                    android:id="@+id/textReqVal"
+
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Approved!! "
+                android:id="@+id/textHeading"
+                android:textColor="@color/btnText"
+                fontPath="fonts/bold.ttf"
+                android:textSize="@dimen/textS"
+                tools:ignore="MissingPrefix"
+                android:layout_marginBottom="@dimen/paddingS"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="this work for me on galaxy note its show contacts, file managers installed on device, gallery, music player"
+            android:id="@+id/textData"
+            android:textColor="@color/gray_light"
+            fontPath="fonts/regular.ttf"
+            android:textSize="@dimen/textS"
+            android:maxLines="3"
+            tools:ignore="MissingPrefix"
+
+            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/paddingS"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/clock_icon"
+                    android:padding="@dimen/paddingS"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/textNS"
+                    android:text="3 HOURS AGO"
+                    android:padding="@dimen/paddingS"
+                    android:id="@+id/textTime"
+                    />
+            </LinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/btnBack"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

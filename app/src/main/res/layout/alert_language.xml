@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/paddingL"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/paddingL"
+            android:text="data"
+            android:textSize="@dimen/textL"
+            fontPath="fonts/bold.ttf"
+            tools:ignore="MissingPrefix"
+            android:id="@+id/tvselect"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/paddingL"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding"
+            android:weightSum="2"
+            android:layout_marginBottom="@dimen/padding"
+            >
+
+            <LinearLayout
+                android:id="@+id/usaLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:src="@drawable/usa_flag"
+                android:layout_gravity="center"
+                android:elevation="5dp"
+
+                />
+                <TextView
+                    android:id="@+id/usa"
+                    fontPath="fonts/bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/gray_light"
+                    android:text="data"
+                    android:paddingTop="@dimen/paddingL"
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="1sp"
+                android:layout_height="match_parent"
+                android:background="@color/btnBack"
+                android:layout_marginBottom="@dimen/paddingL"
+                />
+            <LinearLayout
+                android:id="@+id/chinaLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/china_flag"
+                    android:layout_gravity="center"
+                    android:elevation="5dp"
+                    />
+                <TextView
+                    android:id="@+id/china"
+                    fontPath="fonts/bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_light"
+                    android:text="data"
+                    android:paddingTop="@dimen/paddingL"
+                    android:layout_gravity="center"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

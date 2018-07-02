@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1.0,  maximum-scale=1.0 , user-scalable=no">
+	<title>Wahhao Manufacturer Webapp</title>
+	<script src="http://data.nvish.com/assets/js/jquery.js"></script>
+	<script src="http://data.nvish.com/assets/js/materialize.min.js"></script>
+	<script src="http://data.nvish.com/assets/js/jquery.validate.min.js"></script>
+	<script src="http://data.nvish.com/assets/js/highcharts.js"></script>
+
+</head>
+
+<body>	
+	<div id="salesChart" class="chartBox"></div>
+
+
+<script>
+/* Sales Chart*/
+Highcharts.chart('salesChart', {
+      chart: {
+        type: 'column'
+      },
+      title: {
+        text: ''
+      },
+      credits: {
+        enabled: false
+      },
+      subtitle: {
+        text: ''
+      },
+      xAxis: {
+        type: 'category',
+        tickPixelInterval: 150
+      },
+      yAxis: {
+        title: {
+          text: ''
+        }
+
+      },
+      legend: {
+        enabled: false
+      },
+      plotOptions: {
+        series: {
+          borderWidth: 0,
+          dataLabels: {
+            enabled: true,
+          }
+        }
+      },
+
+      tooltip: {
+        headerFormat: '<span style="font-size:11px"></span><br>',
+
+      },
+      exporting: {
+        enabled: false
+      },
+      series: [{
+        name: "Sales",
+        colorByPoint: true,
+        data: [
+          {
+            name: 'Jan',
+            y: 60,
+            color: '#746aed'
+          }, {
+            name: 'Feb',
+            y: 30,
+            color: '#3cb6d8'
+          }, {
+            name: 'Mar',
+            y: 20,
+            color: '#746aed'
+          },
+
+          {
+            name: 'Apr',
+            y: 60,
+            color: '#746aed'
+          }, {
+            name: 'May',
+            y: 30,
+            color: '#3cb6d8'
+          }, {
+            name: 'Jun',
+            y: 20,
+            color: '#746aed'
+          },
+          {
+            name: 'Jul',
+            y: 60,
+            color: '#746aed'
+          }, {
+            name: 'Aug',
+            y: 30,
+            color: '#3cb6d8'
+          }, {
+            name: 'Sep',
+            y: 20,
+            color: '#746aed'
+          },
+          {
+            name: 'Oct',
+            y: 60,
+            color: '#746aed'
+          }, {
+            name: 'Nov',
+            y: 30,
+            color: '#3cb6d8'
+          }, {
+            name: 'Dec',
+            y: 20,
+            color: '#746aed'
+          },
+        ]
+      }]
+});
+
+/* Sales Chart*/
+</script></body>
+</html>

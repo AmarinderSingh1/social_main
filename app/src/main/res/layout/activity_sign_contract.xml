@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                >
+
+                <TextView
+                    android:id="@+id/textViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingTop="@dimen/padding"
+                    android:paddingBottom="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    android:background="@color/btnBack"
+                    fontPath="fonts/regular.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/light_black"
+                    android:text="Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+
+\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/textDownloadContract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingTop="@dimen/padding"
+                    android:paddingBottom="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    fontPath="fonts/regular.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:textSize="@dimen/textN"
+                    android:visibility="gone"
+                    android:textColor="@color/theme_color"
+                    android:text="Download Contract"/>
+
+                <TextView
+                    android:id="@+id/textUploadContract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingTop="@dimen/padding"
+                    android:paddingBottom="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    fontPath="fonts/bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:textSize="16sp"
+                    android:textColor="@color/btnText"
+                    android:text="Upload Contract"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/uploadContract"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/upload_icon"
+                        android:padding="@dimen/padding"
+                        />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/paddingS"
+                        android:id="@+id/recContract"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+
+                       </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textUploadSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingTop="@dimen/padding"
+                    android:paddingBottom="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    fontPath="fonts/bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:textSize="16sp"
+                    android:textColor="@color/btnText"
+                    android:text="Upload your Signature"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     >
+
+                <ImageView
+                    android:id="@+id/uploadSign"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/upload_icon"
+                    android:padding="@dimen/padding"
+                    />
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/paddingS"
+                        android:id="@+id/recSignature"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textUploadSeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingTop="@dimen/padding"
+                    android:paddingBottom="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    fontPath="fonts/bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:textSize="16sp"
+                    android:textColor="@color/btnText"
+                    android:text="Upload Seal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/uploadSeal"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/upload_icon"
+                        android:padding="@dimen/padding"
+                        />
+                   <android.support.v7.widget.RecyclerView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:padding="@dimen/paddingS"
+                       android:id="@+id/recSeal"
+                       >
+
+                   </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" : doc, docx, txt, jpg, jpeg, png, pdf"
+                    android:textColor="@color/gray_light"
+                    android:textSize="@dimen/textN"
+                    android:paddingLeft="@dimen/padding"
+                    android:id="@+id/allowed"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkbox"
+                        />
+
+                    <TextView
+                        android:id="@+id/textAccept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding"
+                        android:paddingTop="@dimen/padding"
+                        android:paddingBottom="@dimen/padding"
+                        fontPath="fonts/regular.ttf"
+                        tools:ignore="MissingPrefix"
+                        android:textSize="16sp"
+                        android:textColor="@color/gray_light"
+                        android:text="I Accept Usage Policy, Terms and Conditions"/>
+
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                fontPath="fonts/bold.ttf"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                 tools:ignore="MissingPrefix"
+                android:id="@+id/uploadSignBtn"
+                android:background="@drawable/rounded_black"
+                android:textColor="@color/white"
+                android:text="Accept"
+                android:onClick="accept"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

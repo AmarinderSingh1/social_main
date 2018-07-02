@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1.0,  maximum-scale=1.0 , user-scalable=no">
+	<title>Wahhao Manufacturer Webapp</title>
+	<script src="http://data.nvish.com/assets/js/jquery.js"></script>
+	<script src="http://data.nvish.com/assets/js/materialize.min.js"></script>
+	<script src="http://data.nvish.com/assets/js/jquery.validate.min.js"></script>
+	<script src="http://data.nvish.com/assets/js/highcharts.js"></script>
+
+	<style>
+.highcharts-credits{display:none;}
+</style>
+</head>
+
+<body>	
+	<div id="ordersChart" class="chartBox"></div>
+
+
+<script>
+/* Orders Chart*/
+Highcharts.chart('ordersChart', {
+     chart: {                  
+                  plotBackgroundColor: null,
+                  plotBorderWidth: 0,
+                  plotShadow: false,
+                },
+                title: {
+                  text: "ORDER'S",
+                  align: 'center',
+                  verticalAlign: 'middle',
+                  y: 70
+                },
+                plotOptions: {
+                    pie: {
+                        dataLabels: {
+                            enabled: true,
+                            distance: 10,
+                            style: {
+                                color: '#333'
+                            }
+                        },
+                        startAngle: -90,
+                        endAngle: 90,
+                        center: ['50%', '75%']
+                    }
+              }, exporting: { enabled: false },
+                series: [{
+                  type: 'pie',
+                  name: 'Order',
+                  innerSize: '50%',
+                  colors: ['#00a9e6','#f77700','#d42016','#00b98a'],
+                  data: [
+                      ['New', 65],
+                      ['Packed', 20],
+                      ['Shipped', 10],
+                      ['Completed', 65],
+                    
+                      {
+                          name: 'Proprietary or Undetectable',
+                          y: 0.2,
+                          dataLabels: {
+                              enabled: false
+                          }
+                      }
+                  ]
+              }]
+});
+
+/* Orders Chart*/
+
+</script></body>
+</html>

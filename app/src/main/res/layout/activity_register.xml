@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/corLayout"
+        tools:context=".ActivityRegister">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rel1"
+            android:focusableInTouchMode="true"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                style="@style/HeaderBar"
+                android:elevation="4dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_arrow_back_black_24dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/navBackBtn"
+                        android:layout_alignParentLeft="true"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="46dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/logo_w"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding"
+                android:id="@+id/image"
+                android:src="@drawable/register_img"
+                tools:ignore="MissingConstraints" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/nameInput"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textSize="@dimen/textS"
+                android:textColorHint="@color/gray_light"
+                app:hintTextAppearance="@style/TextInputLayout"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding"
+                    fontPath="fonts/regular.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:textSize="@dimen/textS"
+                    android:id="@+id/editName"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:inputType="text"
+                    android:digits="@string/digits"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="@dimen/paddingL"
+                android:layout_marginBottom="@dimen/padding"
+                android:background="@color/gray_light"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/emailInput"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textSize="@dimen/textS"
+                android:textColorHint="@color/gray_light"
+                app:hintTextAppearance="@style/TextInputLayout"
+
+                >
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    fontPath="fonts/regular.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:textSize="@dimen/textS"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:inputType="textEmailAddress"
+                    android:background="@android:color/transparent"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="@dimen/paddingL"
+                 android:background="@color/gray_light"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/padding"
+                    >
+                    <TextView
+                        android:id="@+id/textCoCode"
+                        android:textSize="@dimen/textN"
+                        android:text="Region*"
+                        android:layout_marginLeft="@dimen/padding"
+                        android:layout_marginRight="@dimen/padding"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/spinCtCode"
+                        android:paddingRight="@dimen/paddingS"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/paddingS"
+                    >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/phoneInput"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:textSize="@dimen/textN"
+                    android:layout_marginTop="@dimen/paddingS"
+                    android:textColorHint="@color/gray_light"
+                    app:hintTextAppearance="@style/TextInputLayout"
+
+                    >
+                <EditText
+                    android:id="@+id/editPhone"
+                    fontPath="fonts/regular.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/paddingL"
+                    android:paddingTop="@dimen/paddingL"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textS"
+                    android:background="@android:color/transparent"
+                    android:maxLength="11"
+                    android:inputType="number"
+                    android:backgroundTint="@color/gray_light"
+                    />
+                </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding"
+                android:layout_marginBottom="@dimen/textL"
+                >
+                <View
+                    android:layout_width="115sp"
+                    android:layout_height="1sp"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:layout_marginRight="@dimen/paddingL"
+                    android:background="@color/gray_light"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginRight="@dimen/paddingL"
+                    android:background="@color/gray_light"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                fontPath="fonts/regular.ttf"
+                tools:ignore="MissingPrefix"
+                 android:textAllCaps="false"
+                android:id="@+id/registerBtn"
+                android:background="@drawable/rounded_black"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textS"
+                android:text="Register"
+                android:onClick="registerClick"
+                />
+
+            <TextView
+                android:id="@+id/textRegister"
+                android:layout_marginLeft="@dimen/paddingL"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/textS"
+                fontPath="fonts/regular.ttf"
+                tools:ignore="MissingPrefix"
+                android:textStyle="bold"
+                android:text="Or Register Via"
+                />
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:onClick="weChat"
+               android:layout_margin="15dp"
+               android:background="@drawable/rounded_green"
+               >
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                fontPath="fonts/regular.otf"
+                tools:ignore="MissingPrefix"
+                android:textSize="@dimen/textS"
+                android:id="@+id/chatBtn"
+                android:stateListAnimator="@null"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceButton"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/chaticon"
+                android:text="WeChat"
+                />
+           </RelativeLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="50dp"
+                >
+                <TextView
+                    android:id="@+id/already"
+                    android:layout_marginLeft="@dimen/paddingL"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    fontPath="fonts/bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Already have an account?"
+                    />
+                <TextView
+                    android:id="@+id/textLogin"
+                    fontPath="fonts/bold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/theme_color"
+                    android:layout_height="wrap_content"
+                    android:text="Login Here"
+                    android:paddingRight="@dimen/padding"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>

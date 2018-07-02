@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:layout_gravity="center"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/itemLayout"
+        >
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imgView"
+            android:padding="@dimen/paddingL"
+            />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingRight="@dimen/paddingS"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textL"
+                android:paddingLeft="@dimen/paddingS"
+                android:paddingTop="@dimen/paddingS"
+                android:paddingRight="@dimen/paddingS"
+
+                fontPath="fonts/bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:text="Profile"
+                android:id="@+id/tvHeading"
+                android:textColor="@color/btnText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:maxLines="2"
+                android:textColor="@color/light_black"
+                android:lines="2"
+                android:id="@+id/tvtext"
+                android:textSize="@dimen/textNS"
+                android:paddingLeft="@dimen/paddingS"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/imgV"
+            android:padding="@dimen/paddingL"
+            android:layout_marginRight="@dimen/paddingL"
+            android:src="@drawable/arrow_right"
+            android:layout_marginBottom="@dimen/padding"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginLeft="65dp"
+        android:background="@color/btnBack"
+        />
+</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

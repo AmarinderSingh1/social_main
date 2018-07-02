@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout"
+       >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnBack"
+        android:orientation="horizontal"
+        android:id="@+id/searchLay"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:weightSum="1"
+        >
+
+        <SearchView
+            android:id="@+id/simpleSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="@dimen/padding"
+            android:layout_weight="0.9"
+            />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_weight="0.1"
+                android:layout_gravity="center_vertical"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLay"
+        android:orientation="vertical"
+        android:layout_below="@+id/searchLay"
+        android:layout_marginLeft="@dimen/paddingL"
+        android:focusable="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/createBtn"
+        android:focusableInTouchMode="true"
+        android:layout_marginRight="@dimen/paddingL"
+        android:layout_marginTop="@dimen/padding"
+        >
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/serReqRec"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_alignParentBottom="true"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:textAllCaps="false"
+            android:id="@+id/createBtn"
+            android:background="@drawable/rounded_black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textS"
+            android:text="Create Service Request"
+            android:layout_marginBottom="@dimen/paddingL"
+            android:onClick="createReq"
+            />
+
+    </RelativeLayout>
+    <include
+        layout="@layout/item_no_prod"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/searchLay"
+        />
+    <include
+        layout="@layout/activity_add_servicerequest"
+        android:visibility="gone"
+        ></include>
+    <include layout="@layout/activity_service_request_item"
+        android:visibility="gone"
+        />
+    </android.support.design.widget.CoordinatorLayout>

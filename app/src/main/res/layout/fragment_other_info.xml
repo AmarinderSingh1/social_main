@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent">
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/amcInput"
+                    android:layout_height="wrap_content"
+                    android:hint="Annual Manufacturing Capacity"
+                    android:textSize="@dimen/textS"
+                    android:textColorHint="@color/gray_light"
+                    app:hintTextAppearance="@style/TextInputLayout"
+
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/padding"
+                        fontPath="fonts/regular.ttf"
+                        tools:ignore="MissingPrefix"
+                        android:textColor="@color/btnText"
+                        android:textSize="@dimen/textS"
+                        android:id="@+id/editAMC"
+                        android:background="@android:color/transparent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:inputType="numberDecimal" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:layout_marginRight="@dimen/paddingL"
+                    android:layout_marginBottom="@dimen/padding"
+                    android:background="@color/gray_light"
+                    />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/atInput"
+                    android:layout_height="wrap_content"
+                    android:hint="Annual Turnover"
+                    android:textSize="@dimen/textS"
+                    android:textColorHint="@color/gray_light"
+                    app:hintTextAppearance="@style/TextInputLayout"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/editAT"
+                        fontPath="fonts/regular.ttf"
+                        tools:ignore="MissingPrefix"
+                        android:textSize="@dimen/textS"
+                        android:textColor="@color/btnText"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/padding"
+                        android:layout_height="wrap_content"
+                       android:inputType="numberDecimal"
+                        android:background="@android:color/transparent"
+                       />
+                </android.support.design.widget.TextInputLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:layout_marginRight="@dimen/paddingL"
+                    android:layout_marginBottom="@dimen/padding"
+                    android:background="@color/gray_light"
+                    />
+
+                 <android.support.design.widget.TextInputLayout
+                     android:layout_width="match_parent"
+                     android:id="@+id/aesInput"
+                     android:layout_height="wrap_content"
+                     android:hint="Annual Export Sales"
+                     android:textSize="@dimen/textS"
+                     android:textColorHint="@color/gray_light"
+                     app:hintTextAppearance="@style/TextInputLayout"
+
+                     >
+
+                     <EditText
+                         android:id="@+id/editAES"
+                         fontPath="fonts/regular.ttf"
+                         android:textColor="@color/btnText"
+                         tools:ignore="MissingPrefix"
+                         android:textSize="@dimen/textS"
+                         android:layout_width="match_parent"
+                         android:padding="@dimen/padding"
+                         android:layout_height="wrap_content"
+                         android:inputType="numberDecimal"
+                         android:background="@android:color/transparent"
+                         />
+                 </android.support.design.widget.TextInputLayout>
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1sp"
+                     android:layout_marginLeft="@dimen/padding"
+                     android:layout_marginRight="@dimen/paddingL"
+                     android:layout_marginBottom="@dimen/padding"
+                     android:background="@color/gray_light"
+                     />
+                 <android.support.design.widget.TextInputLayout
+                     android:layout_width="match_parent"
+                     android:id="@+id/expInput"
+                     android:layout_height="wrap_content"
+                     android:hint="Experience in US Market"
+                     android:textSize="@dimen/textS"
+                     android:textColorHint="@color/gray_light"
+                     app:hintTextAppearance="@style/TextInputLayout"
+
+                     >
+
+                     <EditText
+                         android:id="@+id/editExp"
+                         fontPath="fonts/regular.ttf"
+                         tools:ignore="MissingPrefix"
+                         android:textSize="@dimen/textS"
+                         android:textColor="@color/btnText"
+                         android:layout_width="match_parent"
+                         android:padding="@dimen/padding"
+                         android:inputType="numberDecimal"
+                         android:layout_height="wrap_content"
+                         android:background="@android:color/transparent"
+                         />
+                 </android.support.design.widget.TextInputLayout>
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1sp"
+                     android:layout_marginLeft="@dimen/padding"
+                     android:layout_marginRight="@dimen/paddingL"
+                     android:layout_marginBottom="@dimen/padding"
+                     android:background="@color/gray_light"
+                     />
+
+                 <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:id="@+id/osapInput"
+                 android:layout_height="wrap_content"
+                 android:hint="Current Online Stores and Products"
+                 android:textSize="@dimen/textS"
+                     android:textColorHint="@color/gray_light"
+                     app:hintTextAppearance="@style/TextInputLayout"
+
+                     >
+
+                 <EditText
+                     android:id="@+id/editOSAP"
+                     fontPath="fonts/regular.ttf"
+                     tools:ignore="MissingPrefix"
+                     android:textSize="@dimen/textS"
+                     android:textColor="@color/btnText"
+                     android:layout_width="match_parent"
+                     android:padding="@dimen/padding"
+                     android:layout_height="wrap_content"
+                     android:inputType="text"
+                     android:background="@android:color/transparent"
+                     android:digits="@string/digits"
+                     />
+             </android.support.design.widget.TextInputLayout>
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1sp"
+                     android:layout_marginLeft="@dimen/padding"
+                     android:layout_marginRight="@dimen/paddingL"
+                     android:layout_marginBottom="@dimen/padding"
+                     android:background="@color/gray_light"
+                     />
+
+                 <TextView
+                     android:id="@+id/textUplaodDoc"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:padding="@dimen/padding"
+                     android:textSize="@dimen/textS"
+                     android:textColor="@color/btnText"
+                     fontPath="fonts/bold.ttf"
+                     tools:ignore="MissingPrefix"
+                     android:text="Upload Business Related Documents"
+                     />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:padding="@dimen/padding"
+                        android:src="@drawable/upload_icon"
+                        android:id="@+id/upload"
+                        />
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/paddingS"
+                        android:id="@+id/horRexView"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+        <TextView
+            android:id="@+id/textFormat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_light"
+            android:paddingRight="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
+            android:paddingBottom="@dimen/padding"
+            android:textSize="@dimen/textNS"
+            android:layout_marginBottom="@dimen/paddingL"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:text=" : doc, docx, txt, jpg, jpeg, png, pdf"
+            />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15sp"
+                android:layout_marginBottom="@dimen/padding"
+                android:background="@color/btnBack"
+                />
+
+
+            <TextView
+                android:id="@+id/textWarning"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/textNS"
+                android:textColor="@color/gray_light"
+                android:gravity="center"
+                fontPath="fonts/regular.ttf"
+                tools:ignore="MissingPrefix"
+                android:text="You will not be able to make any changes after you submit"
+            />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                fontPath="fonts/regular.ttf"
+                tools:ignore="MissingPrefix"
+                android:id="@+id/approveBtn"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_black"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textS"
+                android:text="Submit for Approval"
+             />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/padding"
+            android:padding="@dimen/paddingS"
+            android:src="@drawable/notification_screen"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Approved!! "
+                    android:textColor="@color/btnText"
+                    android:padding="@dimen/paddingS"
+                    fontPath="fonts/bold.ttf"
+                    android:id="@+id/textHeadings"
+                    android:textSize="@dimen/textS"
+                    tools:ignore="MissingPrefix"
+
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="@dimen/paddingS"
+                    android:id="@+id/imgIcon"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:id="@+id/textData"
+                android:textColor="@color/gray_light"
+                fontPath="fonts/regular.ttf"
+                android:paddingLeft="@dimen/paddingS"
+                android:paddingRight="@dimen/padding"
+                android:textSize="@dimen/textNS"
+                tools:ignore="MissingPrefix"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/paddingS"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/clock_icon"
+                    android:padding="@dimen/paddingS"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/textNS"
+                    android:text="3 HOURS AGO"
+                    android:padding="@dimen/paddingS"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+    android:layout_marginTop="@dimen/padding"
+    android:layout_width="match_parent"
+    android:layout_height="1sp"
+    android:background="@color/btnBack"
+    />
+</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

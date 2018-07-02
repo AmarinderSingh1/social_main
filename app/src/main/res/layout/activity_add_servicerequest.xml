@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/addReqLay"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        >
+    <TextView
+        android:id="@+id/textReqType"
+        android:textSize="@dimen/textN"
+        android:text="Request Type"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:id="@+id/spinnerReqType"
+        android:paddingRight="@dimen/paddingS"
+        android:layout_marginBottom="4dp"
+        android:paddingBottom="@dimen/paddingS"
+        android:paddingTop="@dimen/paddingS"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/paddingL"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gray_light"
+        />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/subInput"
+        android:layout_height="wrap_content"
+        android:hint="Subject"
+        android:textSize="@dimen/textS"
+        android:textColorHint="@color/gray_light"
+        app:hintTextAppearance="@style/TextInputLayout"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:padding="@dimen/padding"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:textColor="@color/btnText"
+            android:textSize="@dimen/textS"
+            android:id="@+id/editSubject"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="text"
+            android:digits="@string/digits"
+            />
+    </android.support.design.widget.TextInputLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_marginRight="@dimen/paddingL"
+            android:layout_marginBottom="@dimen/padding"
+            android:background="@color/gray_light"
+            />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/desInput"
+            android:layout_height="wrap_content"
+            android:hint="Issue Description"
+            android:textSize="@dimen/textS"
+            android:textColorHint="@color/gray_light"
+            app:hintTextAppearance="@style/TextInputLayout"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="@dimen/padding"
+                fontPath="fonts/regular.ttf"
+                tools:ignore="MissingPrefix"
+                android:textColor="@color/btnText"
+                android:textSize="@dimen/textS"
+                android:id="@+id/editDes"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:lines="1"
+                android:inputType="text"
+                android:digits="@string/digits"
+                />
+        </android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/paddingL"
+        android:layout_marginBottom="@dimen/padding"
+        android:background="@color/gray_light"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/padding"
+            >
+            <TextView
+                android:id="@+id/textCoCode"
+                android:textSize="@dimen/textN"
+                android:text="Region*"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spinCtCode"
+                android:paddingRight="@dimen/paddingS"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/paddingS"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/phoneInput"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:textSize="@dimen/textN"
+                android:layout_marginTop="@dimen/paddingS"
+                android:textColorHint="@color/gray_light"
+                app:hintTextAppearance="@style/TextInputLayout"
+
+                >
+                <EditText
+                    android:id="@+id/editPhone"
+                    fontPath="fonts/regular.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/paddingL"
+                    android:paddingTop="@dimen/paddingL"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textS"
+                    android:background="@android:color/transparent"
+                    android:maxLength="11"
+                    android:inputType="number"
+                    android:backgroundTint="@color/gray_light"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding"
+        android:layout_marginBottom="@dimen/textL"
+        >
+        <View
+            android:layout_width="115sp"
+            android:layout_height="1sp"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_marginRight="@dimen/paddingL"
+            android:background="@color/gray_light"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginRight="@dimen/paddingL"
+            android:background="@color/gray_light"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textUplaodDoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/textS"
+        android:textColor="@color/btnText"
+        fontPath="fonts/bold.ttf"
+        tools:ignore="MissingPrefix"
+        android:text="Attachments"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:padding="@dimen/padding"
+            android:src="@drawable/upload_icon"
+            android:id="@+id/upload"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingS"
+            android:id="@+id/attRecView"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textFormat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_light"
+            android:paddingRight="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
+            android:paddingBottom="@dimen/padding"
+            android:textSize="@dimen/textNS"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:text=" : doc, docx, txt, jpg, jpeg, png, pdf"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            fontPath="fonts/regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:id="@+id/createReqBtn"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textS"
+            android:text="Create Request"
+            android:onClick="createRequest"
+            />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
